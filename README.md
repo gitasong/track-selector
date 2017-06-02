@@ -24,11 +24,11 @@ Independent project for Epicodus Week 2. Helps a prospective student at Epicodus
 
 ## Technologies Used
 
-HTML 5
-CSS 3
-Bootstrap 3.3.7
-Javascript (ECMAScript 6)
-JQuery 3.2.1
+* HTML 5
+* CSS 3
+* Bootstrap 3.3.7
+* Javascript (ECMAScript 6)
+* JQuery 3.2.1
 
 ### License
 
