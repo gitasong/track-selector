@@ -35,44 +35,41 @@ $(document).ready(function() {
           $(".idealResult").text("Java/Android");
         };
       } else {
-        if (wordpressBusinessDevelopment !== "4" && dynamicWebApps === "No") {
+        if (androidDevelopment === "Yes" && evilMicrosoft === "No"){
           $("#results").show();
-          $(".wordpressBusinessDevelopment").show();
-          $(".idealResult").text("PHP/Drupal");
-        } else if (wordpressBusinessDevelopment !== "4" && dynamicWebApps === "Yes") {
+          $(".androidDevelopment").show();
+          $(".idealResult").text("Java/Android");
+        } else if (androidDevelopment === "No" && evilMicrosoft === "Yes") {
           $("#results").show();
-          $(".wordpressBusinessDevelopment").show();
-          $(".dynamicWebApps").show();
-          $(".idealResult").text("PHP/Drupal");
-        } else if (wordpressBusinessDevelopment === "4" && dynamicWebApps === "Yes") {
+          $(".evilMicrosoft").show();
+          $(".idealResult").text("C#/.NET");
+        } else if (androidDevelopment === "Yes" && evilMicrosoft === "Yes"){
           $("#results").show();
-          $(".dynamicWebApps").show();
-          $(".idealResult").text("Ruby/Rails");
+          $(".androidDevelopment").show();
+          $(".evilMicrosoft").show();
+          $(".idealResult").text("Java/Android");
         } else {
-          $("#results").show();
-          $(".noResults").show();
-          $(".idealResult").text("You've indicated that you're not interested in any of the choices. Perhaps you'd like to consider something other than programming?");
+          if (wordpressBusinessDevelopment !== "4" && dynamicWebApps === "No") {
+            $("#results").show();
+            $(".wordpressBusinessDevelopment").show();
+            $(".idealResult").text("PHP/Drupal");
+          } else if (wordpressBusinessDevelopment !== "4" && dynamicWebApps === "Yes") {
+            $("#results").show();
+            $(".wordpressBusinessDevelopment").show();
+            $(".dynamicWebApps").show();
+            $(".idealResult").text("PHP/Drupal");
+          } else if (wordpressBusinessDevelopment === "4" && dynamicWebApps === "Yes") {
+            $("#results").show();
+            $(".dynamicWebApps").show();
+            $(".idealResult").text("Ruby/Rails");
+          } else if (wordpressBusinessDevelopment === "4" && dynamicWebApps === "No") {
+            $("#results").show();
+            $(".noResults").show();
+            $(".idealResult").text("You've indicated that you're not interested in any of the choices. Perhaps you'd like to consider something other than programming?");
+          };
         };
       };
-      // if (androidDevelopment === "Yes" || evilMicrosoft === "Yes") {
-      //   $("#results").show();
-      //   $(".androidDevelopment").show();
-      //   $(".evilMicrosoft").show();
-      // } else {
-      //   $("#results").show();
-      //   $(".wordpressBusinessDevelopment").show();
-      //   $(".dynamicWebApps").show();
-      // }
     };
-
-    // $(".cssDesign").text(frontVsBack);
-    // $(".enterpriseSoftware").text(enterpriseSoftware);
-    // $(".androidDevelopment").text(androidDevelopment);
-    // $(".evilMicrosoft").text(evilMicrosoft);
-    // $(".wordpressBusinessDevelopment").text(wordpressBusinessDevelopment);
-    // $(".dynamicWebApps").text(dynamicWebApps);
-
-    // $("#results").show();
 
     event.preventDefault();
   });

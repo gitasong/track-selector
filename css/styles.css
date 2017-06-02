@@ -52,6 +52,6 @@ p, ul, ol, li {
   display: none;
 }
 
-.cssDesign, .androidDevelopment, .evilMicrosoft, .wordpressBusinessDevelopment, .dynamicWebApps {
+.cssDesign, .androidDevelopment, .evilMicrosoft, .wordpressBusinessDevelopment, .dynamicWebApps, .noResults {
   display: none;
 }
