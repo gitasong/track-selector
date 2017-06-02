@@ -32,12 +32,13 @@
         </div>
         <div id="form track-selector">
           <!-- form elements go here -->
-          <form id="track-selctor-form">
+          <form id="track-selector-form">
             <div class="form-group" class="front-vs-back">
               <label for="front-vs-back">Do you want to focus on design and user experience (front-end development) or building applications that make websites run (back-end development)?</label>
               <select class="form-control" id="front-vs-back">
-                <option>Design/User Experience (Front-End)</option>
-                <option>Building Applications/Making Websites Run (Back-End)</option>
+                <option>Design/User Experience (Front-End Development)</option>
+                <option>Building Applications/Making Websites Run (Back-End Development)</option>
+                <option>Both (Full-Stack Development)</option>
               </select>
             </div>
 
@@ -86,10 +87,20 @@
           <button type="submit" class="btn btn-primary">Show me my results!</button>
         </form>
         </div>
+
         <div id="results">
-          <h2>Your Ideal Track Choice</h2>
+          <h2>Your Top 3 Track Choices</h2>
           <hr>
-          <p>Morbi mollis sapien quis ex interdum posuere. Vivamus at felis ipsum. Etiam nec fringilla tortor, quis malesuada urna. Sed pharetra nisi id eros interdum convallis. Vivamus imperdiet suscipit elit, ac semper nisl condimentum in.</p>
+          <p>Congratulations! Your top three track choices are:</p>
+          <ol>
+            <li class="cssDesign">CSS/Design</li>
+            <li class="androidDevelopment">Java/Android</li>
+            <li class="evilMicrosoft">C#/.NET</li>
+            <li class="wordpressBusinessDevelopment">PHP/Drupal</li>
+            <li class="dynamicWebApps">Ruby/Rails</li>
+          </ol>
+          <h2>Your ideal track choice is:</h2>
+          <h3 class="idealResult">Your Ideal Result</h3>
         </div>
       </div>
     </div>
