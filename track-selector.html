@@ -25,15 +25,68 @@
           <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat magna sit amet efficitur hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt egestas libero, non consequat purus pretium vitae. Etiam ac sapien efficitur, ultrices elit vitae, mollis orci. Aenean accumsan, sem eu vehicula iaculis, eros diam aliquam sem, quis tempus purus magna in metus. Ut vel tristique nulla, vel fringilla lectus. Proin id tincidunt risus. Duis ut libero elementum, scelerisque metus quis, consequat dolor.</p>
         </div>
-        <div id="track-selector">
+        <div id="track-selector-div">
           <h2>Track Selector</h2>
           <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis quis ex id mollis. Sed quis accumsan felis, sit amet tempor urna.</p>
+          <p>Please answer each question.</p>
         </div>
-        <div id="form track-selector-form">
+        <div id="form track-selector">
           <!-- form elements go here -->
+          <form id="track-selctor-form">
+            <div class="form-group" class="front-vs-back">
+              <label for="front-vs-back">Do you want to focus on design and user experience (front-end development) or building applications that make websites run (back-end development)?</label>
+              <select class="form-control" id="front-vs-back">
+                <option>Design/User Experience (Front-End)</option>
+                <option>Building Applications/Making Websites Run (Back-End)</option>
+              </select>
+            </div>
+
+            <div class="form-group" class="enterprise-software">
+              <label for="enterprise-software">Do you want to work for large companies on enterprise software? (Y/N)</label>
+              <select class="form-control" id="enterprise-software">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+
+            <div class="form-group" class="android-development">
+              <label for="android-development">Do you want to work on Android development? (Y/N)</label>
+              <select class="form-control" id="android-development">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+
+            <div class="form-group" class="evil-microsoft">
+              <label for="evil-microsoft">Do you want to work on software from the evil giant Microsoft? (Y/N)</label>
+              <select class="form-control" id="evil-microsoft">
+                <option>Yes, I want to sell my soul!</option>
+                <option>No, I want to keep my soul, thank you.</option>
+              </select>
+            </div>
+
+            <div class="form-group" class="wordpress-business-development">
+              <label for="wordpress-business-development">Do you want to build smaller sites for smaller businesses, organizations, and brands, and/or do you want to work in WordPress development?</label>
+              <select class="form-control" id="wordpress-business-development">
+                <option>Smaller Businesses</option>
+                <option>WordPress Development</option>
+                <option>Both</option>
+                <option>Neither</option>
+              </select>
+            </div>
+
+            <div class="form-group" class="dynamic-web-apps">
+              <label for="dynamic-web-apps">Do you want to build dynamic web applications? (Y/N)</label>
+              <select class="form-control" id="dynamic-web-apps">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+
+          <button type="submit" class="btn btn-primary">Show me my results!</button>
+        </form>
         </div>
-        <div id="result">
+        <div id="results">
           <h2>Your Ideal Track Choice</h2>
           <hr>
           <p>Morbi mollis sapien quis ex interdum posuere. Vivamus at felis ipsum. Etiam nec fringilla tortor, quis malesuada urna. Sed pharetra nisi id eros interdum convallis. Vivamus imperdiet suscipit elit, ac semper nisl condimentum in.</p>

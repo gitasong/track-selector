@@ -47,3 +47,7 @@ p, ul, ol, li {
   font-size: 19px;
   color: #252525;
 }
+
+#results {
+  display: none;
+}
