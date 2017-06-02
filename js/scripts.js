@@ -33,13 +33,27 @@ $(document).ready(function() {
           $(".androidDevelopment").show();
           $(".evilMicrosoft").show();
           $(".idealResult").text("Java/Android");
-        }
+        };
       } else {
-        $("#results").show();
-        $(".wordpressBusinessDevelopment").show();
-        $(".dynamicWebApps").show();
-        $(".idealResult").text("Ruby/Rails");
-      }
+        if (wordpressBusinessDevelopment !== "4" && dynamicWebApps === "No") {
+          $("#results").show();
+          $(".wordpressBusinessDevelopment").show();
+          $(".idealResult").text("PHP/Drupal");
+        } else if (wordpressBusinessDevelopment !== "4" && dynamicWebApps === "Yes") {
+          $("#results").show();
+          $(".wordpressBusinessDevelopment").show();
+          $(".dynamicWebApps").show();
+          $(".idealResult").text("PHP/Drupal");
+        } else if (wordpressBusinessDevelopment === "4" && dynamicWebApps === "Yes") {
+          $("#results").show();
+          $(".dynamicWebApps").show();
+          $(".idealResult").text("Ruby/Rails");
+        } else {
+          $("#results").show();
+          $(".noResults").show();
+          $(".idealResult").text("You've indicated that you're not interested in any of the choices. Perhaps you'd like to consider something other than programming?");
+        };
+      };
       // if (androidDevelopment === "Yes" || evilMicrosoft === "Yes") {
       //   $("#results").show();
       //   $(".androidDevelopment").show();
