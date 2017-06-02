@@ -1,0 +1,49 @@
+/*.tab-pane.active {
+  border: 1px solid #ddd;
+  font-family: 'Source Sans Pro', sans-serif;
+}*/
+
+/*colors:
+#029ACF - med. blue colored indicator box
+#D9230F - red h1 & colored indicator box
+#444 - dark gray h1 font
+#252525 - body text
+#3A56A2 - h2 dark blue
+#ddd - light gray borders*/
+
+#main-content {
+  border: 1px solid #eee;
+  padding: 15px 10px 15px 10px;
+}
+
+h1, h2, h3, h4, h5, h5, p, ul, ol, li {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  color: #D9230F;
+}
+
+h1 span.span1 {
+  color: #ccc;
+}
+
+h1 span.span2 {
+  color: #444;
+}
+
+h2 {
+  color: #3A56A2;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+hr {
+  color: #666;
+}
+
+p, ul, ol, li {
+  font-weight: 400;
+  font-size: 19px;
+  color: #252525;
+}
