@@ -1,17 +1,17 @@
 $(document).ready(function() {
   $("#track-selector-form").submit(function(event) {
     var frontVsBack = $("#front-vs-back").val();
-      console.log(frontVsBack);
+      // console.log(frontVsBack);
     var enterpriseSoftware = $("#enterprise-software").val();
-      console.log(enterpriseSoftware);
+      // console.log(enterpriseSoftware);
     var androidDevelopment= $("#android-development").val();
-      console.log(androidDevelopment);
+      // console.log(androidDevelopment);
     var evilMicrosoft = $("#evil-microsoft").val();
-      console.log(evilMicrosoft);
+      // console.log(evilMicrosoft);
     var wordpressBusinessDevelopment = $("#wordpress-business-development").val();
-      console.log(wordpressBusinessDevelopment);
+      // console.log(wordpressBusinessDevelopment);
     var dynamicWebApps = $("#dynamic-web-apps").val();
-      console.log(dynamicWebApps);
+      // console.log(dynamicWebApps);
 
     // branching tree goes here
     if (frontVsBack === "1") {

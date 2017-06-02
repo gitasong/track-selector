@@ -5,7 +5,8 @@
 
 /*colors:
 #029ACF - med. blue colored indicator box
-#D9230F - red h1 & colored indicator box
+#D9230F - link, red h1 & colored indicator box
+#91170a - link hover color (maroon)
 #444 - dark gray h1 font
 #252525 - body text
 #3A56A2 - h2 dark blue
@@ -13,7 +14,16 @@
 
 #main-content {
   border: 1px solid #eee;
+  margin: 40px;
   padding: 15px 10px 15px 10px;
+}
+
+a {
+  color: #D9230F;
+}
+
+a:hover {
+  color: #91170a;
 }
 
 h1, h2, h3, h4, h5, h5, p, ul, ol, li {
@@ -22,6 +32,8 @@ h1, h2, h3, h4, h5, h5, p, ul, ol, li {
 
 h1 {
   color: #D9230F;
+  margin-top: 15px;
+  margin-left: 40px;
 }
 
 h1 span.span1 {
@@ -46,6 +58,39 @@ p, ul, ol, li {
   font-weight: 400;
   font-size: 19px;
   color: #252525;
+}
+
+ul#pre-head {
+  list-style: none;
+  margin-left: 15px;
+  margin-bottom: 0px;
+}
+
+ul#pre-head li{
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 2px;
+  border-radius: 4px;
+}
+
+ul#pre-head li:first-child {
+  background-color: #029ACF;
+  padding: 0px 8px 2px 8px;
+}
+
+ul#pre-head li:nth-child(2) {
+  background-color: #D9230F;
+  padding: 0px 8px 2px 8px;
+}
+
+.btn-primary {
+  background-color: #029ACF;
+}
+
+.btn-primary:hover {
+  background-color: #3A56A2;
 }
 
 #results {
