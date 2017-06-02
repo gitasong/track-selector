@@ -40,6 +40,11 @@
         <div id="form track-selector">
           <!-- form elements go here -->
           <form id="track-selector-form">
+            <div class="form-group">
+              <label for="first-name">Your First Name</label>
+              <input id="first-name" class="form-control" type="text" placeholder="First Name">
+            </div>
+
             <div class="form-group" class="front-vs-back">
               <label for="front-vs-back">Do you want to focus on design and user experience (front-end development) or building applications that make websites run (back-end development)?</label>
               <select class="form-control" id="front-vs-back">
@@ -96,16 +101,16 @@
         </div>
 
         <div id="results">
-          <h2>Your Top 3 Track Choices</h2>
+          <h2>Your Top Track Choices</h2>
           <hr>
-          <p>Congratulations! Your top three track choices are:</p>
+          <p>Congratulations, <span class="firstName"></span>! Your top track choices are:</p>
           <ol>
             <li class="cssDesign">CSS/Design</li>
             <li class="androidDevelopment">Java/Android</li>
             <li class="evilMicrosoft">C#/.NET</li>
             <li class="wordpressBusinessDevelopment">PHP/Drupal</li>
             <li class="dynamicWebApps">Ruby/Rails</li>
-            <li class="noResults">You don't have any results.</li>
+            <li class="noResults"><span class="firstName"></span>, you don't have any results.</li>
           </ol>
           <h2>Your ideal track choice is:</h2>
           <h3 class="idealResult"></h3>
