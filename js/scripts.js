@@ -14,15 +14,41 @@ $(document).ready(function() {
       console.log(dynamicWebApps);
 
     // branching tree goes here
-    if (frontVsBack === "1" || frontVsBack === "3") {
+    if (frontVsBack === "1") {
       $("#results").show();
       $(".cssDesign").show();
+      $(".idealResult").text("CSS/Design");
     } else {
-      $("#results").show();
-      $(".androidDevelopment").show();
-      $(".evilMicrosoft").show();
-      $(".wordpressBusinessDevelopment").show();
-      $(".dynamicWebApps").show();
+      if (enterpriseSoftware === "Yes"){
+        if (androidDevelopment === "Yes" && evilMicrosoft === "No"){
+          $("#results").show();
+          $(".androidDevelopment").show();
+          $(".idealResult").text("Java/Android");
+        } else if (androidDevelopment === "No" && evilMicrosoft === "Yes") {
+          $("#results").show();
+          $(".evilMicrosoft").show();
+          $(".idealResult").text("C#/.NET");
+        } else {
+          $("#results").show();
+          $(".androidDevelopment").show();
+          $(".evilMicrosoft").show();
+          $(".idealResult").text("Java/Android");
+        }
+      } else {
+        $("#results").show();
+        $(".wordpressBusinessDevelopment").show();
+        $(".dynamicWebApps").show();
+        $(".idealResult").text("Ruby/Rails");
+      }
+      // if (androidDevelopment === "Yes" || evilMicrosoft === "Yes") {
+      //   $("#results").show();
+      //   $(".androidDevelopment").show();
+      //   $(".evilMicrosoft").show();
+      // } else {
+      //   $("#results").show();
+      //   $(".wordpressBusinessDevelopment").show();
+      //   $(".dynamicWebApps").show();
+      // }
     };
 
     // $(".cssDesign").text(frontVsBack);
